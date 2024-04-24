@@ -5,7 +5,7 @@ provider "aws" {
 resource "aws_instance" "example" {
     ami           = "ami-0c55b159cbfafe1f0"  # Specify an appropriate AMI ID
     instance_type = "t2.micro"
-    key_name = "<add the keypair name created" # for the login of ec2 through terminal
+    key_name = "<add the keypair name created" # for the login of ec2 through terminal # if required
 }
 
 # after applying terraform apply command this will create a terraform.tfstate file which is responsible for tracking the changes like what resiurces are created.
